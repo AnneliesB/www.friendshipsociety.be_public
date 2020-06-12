@@ -1,0 +1,61 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Facebook OG Tags
+  meta(property='og:url' content='https://www.friendshipsociety.be/')
+  meta(property='og:type' content='website')
+  meta(property='og:title' content='Friendship Society | online vriendenboek')
+  meta(property='og:description' content='Friendship Society helpt jou om je vrienden beter te leren kennen. Stel jouw vriendenboek op en deel hem waar je maar wil!')
+  meta(property='og:image' content='https://www.friendshipsociety.be/images/graph.jpg')
+  // end OG Tags
+  // Twitter OG Tags
+  meta(name='twitter:title' content='designosource | jong digitaal talent')
+  meta(name='twitter:domain' content='https://www.friendshipsociety.be/')
+  meta(name='twitter:site' content='Friendship Society | online vriendenboek')
+  meta(name='twitter:creator' content='@FriendshipSociety')
+  meta(name='twitter:image' content='https://www.friendshipsociety.be/images/og-tcards.png')
+  meta(name='twitter:description' content='Friendship Society helpt jou om je vrienden beter te leren kennen. Stel jouw vriendenboek op en deel hem waar je maar wil!')
+  meta(name='twitter:url' content='https://www.friendshipsociety.be/')
+  // end Twitter OG Tags
+  link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://www.friendshipsociety.be/stylesheets/normalize.css')
+  link(rel='stylesheet' href='https://www.friendshipsociety.be/stylesheets/app.css')
+  link(rel='apple-touch-icon' sizes='180x180' href='https://www.friendshipsociety.be/images/apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='https://www.friendshipsociety.be/images/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='https://www.friendshipsociety.be/images/favicon-16x16.png')
+  link(rel='manifest' href='https://www.friendshipsociety.be/images/site.webmanifest')
+  link(rel='mask-icon' href='https://www.friendshipsociety.be/images/safari-pinned-tab.svg' color='#5bbad5')
+  link(rel='shortcut icon' href='https://www.friendshipsociety.be/images/favicon.ico')
+  meta(name='msapplication-TileColor' content='#da532c')
+  meta(name='msapplication-config' content='https://www.friendshipsociety.be/images/browserconfig.xml')
+  meta(name='theme-color' content='#ffffff')
+  title Friendship Society
+body(class='background entry')
+.logo__container.logo__container--large.entry__logo
+  img(src='./images/logo.svg' alt='Friendship Society logo')
+.form.form_entry
+  .error__container.error__container--pink
+  .form__field.form__field--entry
+    label.form__field--label(for='email') E-mailadres
+    input#email.form__field--input(type='email' name='email')
+  .form__field.form__field--entry
+    label.form__field--label(for='password') Wachtwoord
+    input#password.form__field--input.form__field--input--entry(type='password' name='password')
+    p.form__subLink--passwordReset Wachtwoord vergeten?
+  button.btn.form__field--button Login
+  .entry__redirect
+    p
+      | Heb je nog geen profiel? 
+      a.link--redirect(href='./registreer') Registreer nu!
+.overlay
+.popup.popup__question.popup__question--resetPassword
+  p Vul je e-mailadres in om je wachtwoord te resetten
+  .error__container.error__container--pink.error__container--popup
+  input.form__field__edit--input.popup__textarea--edit.popup__textarea--resetPass(type='email' name='email' placeholder='E-mailadres')
+  .popup__container--buttons
+    button.btn.btn__action--question.btn__action--question--secondary.btn__popup--edit bevestig
+    button.btn.btn__action.btn__action--question.btn__action--question--primary.btn__popup--cancel annuleer
+script(type="text/javascript" src='/javascripts/config.js')
+script(type="text/javascript" src='/javascripts/login.js')
+script(type="text/javascript" src='/javascripts/request-reset-password.js')

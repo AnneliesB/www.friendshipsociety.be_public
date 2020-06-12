@@ -1,0 +1,72 @@
+.navigation__links {
+    display: none;
+    // display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.navigation__settings--desktop{
+    display: none;
+}
+
+.navigation__links a{
+    padding: 0.5em 0.6em;
+    text-decoration: none;
+}
+
+.main__general{
+    .navigation__links a{
+        color: $orange;
+    }
+}
+
+.main__settings{
+    .navigation__links a{
+        color: $pink;
+    }
+}
+
+.navigation__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 0.5em;
+}
+
+.navigation__main--hamburgerless{
+    display: flex;
+    justify-content: center;
+}
+
+.main__settings--instellingen{
+    .settings__links{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(min-width: 600px){
+    .navigation{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    
+    .navigation__links{
+        display: flex;
+    }
+
+    .navigation__main--menu{
+        display: none;
+    }
+}
+
+@media(min-width: 800px){
+    .navigation__settings--mobile{
+        display: none;
+    }
+    
+    .navigation__settings--desktop{
+        display: inline;
+    }
+}

@@ -1,0 +1,113 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Facebook OG Tags
+  meta(property='og:url' content='https://www.friendshipsociety.be/')
+  meta(property='og:type' content='website')
+  meta(property='og:title' content='Friendship Society | online vriendenboek')
+  meta(property='og:description' content='Friendship Society helpt jou om je vrienden beter te leren kennen. Stel jouw vriendenboek op en deel hem waar je maar wil!')
+  meta(property='og:image' content='https://www.friendshipsociety.be/images/graph.jpg')
+  // end OG Tags
+  // Twitter OG Tags
+  meta(name='twitter:title' content='designosource | jong digitaal talent')
+  meta(name='twitter:domain' content='https://www.friendshipsociety.be/')
+  meta(name='twitter:site' content='Friendship Society | online vriendenboek')
+  meta(name='twitter:creator' content='@FriendshipSociety')
+  meta(name='twitter:image' content='https://www.friendshipsociety.be/images/og-tcards.png')
+  meta(name='twitter:description' content='Friendship Society helpt jou om je vrienden beter te leren kennen. Stel jouw vriendenboek op en deel hem waar je maar wil!')
+  meta(name='twitter:url' content='https://www.friendshipsociety.be/')
+  // end Twitter OG Tags
+  link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://www.friendshipsociety.be/stylesheets/normalize.css')
+  link(rel='stylesheet' href='https://www.friendshipsociety.be/stylesheets/app.css')
+  link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous')
+  link(rel='apple-touch-icon' sizes='180x180' href='https://www.friendshipsociety.be/images/apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='https://www.friendshipsociety.be/images/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='https://www.friendshipsociety.be/images/favicon-16x16.png')
+  link(rel='manifest' href='https://www.friendshipsociety.be/images/site.webmanifest')
+  link(rel='mask-icon' href='https://www.friendshipsociety.be/images/safari-pinned-tab.svg' color='#5bbad5')
+  link(rel='shortcut icon' href='https://www.friendshipsociety.be/images/favicon.ico')
+  meta(name='msapplication-TileColor' content='#da532c')
+  meta(name='msapplication-config' content='https://www.friendshipsociety.be/images/browserconfig.xml')
+  meta(name='theme-color' content='#ffffff')
+  title Friendship Society
+body(class='main main__settings')
+nav.navigation
+  .navigation__main
+    .navigation__main--logo
+      a(href='./index')
+        img(src='./images/logo-pink.svg' alt='Friendship Society logo')
+    .navigation__main--menu
+      img(src='./images/hamburger-pink.svg' alt='Hamburger navigation button')
+  .navigation__links
+    a.FS__link--toggle Deel mijn society
+    a.navigation__settings--mobile(href='instellingen') instellingen
+    a.navigation__settings--desktop(href='profiel') instellingen
+.settings__wrapper
+  .settings__wrapper--navigation
+    .settings__links
+      a(href='./profiel')
+        .settings__links--item
+          p.link__item--label Profiel instellingen
+          i.fas.fa-chevron-right
+      a(href='./wijzig-vragenlijst')
+        .settings__links--item
+          p.link__item--label Mijn vragen aanpassen
+          i.fas.fa-chevron-right
+      a(href='./faq')
+        .settings__links--item
+          p.link__item--label FAQ
+          i.fas.fa-chevron-right
+      .btn__logout
+        .settings__links--item.settings__links--item--last.btn__logout
+          p.link__item--label Afmelden
+          i.fas.fa-chevron-right
+  .settings__wrapper--content
+    .settings__titleContainer
+      h2 Instellingen wijzigen
+    .form.form_entry
+      .error__container.error__container--pink.error__container--main
+      .form__field.form__field--entry.form__field--profile
+        label.form__field--label(for='firstname') Voornaam
+        input#firstname.form__field--input(type='text' name='firstname')
+      .form__field.form__field--entry.form__field--profile
+        label.form__field--label(for='lastname') Naam
+        input#lastname.form__field--input(type='text' name='lastname')
+      .form__field.form__field--entry.form__field--profile
+        label.form__field--label(for='nickname') Nickname
+        input#nickname.form__field--input(type='text' name='nickname')
+      .form__field.form__field--entry.form__field--profile
+        label.form__field--label(for='email') E-mailadres
+        input#email.form__field--input(type='email' name='email')
+      .form__field.form__field--entry.form__field--profile
+        label.form__field--label.form__field--label--password(for='password')
+          | Wijzig wachtwoord 
+          i.fas.fa-chevron-right
+      button.btn.btn__fullWidth.btn__profile--edit Opslaan
+.overlay
+.popup.popup__question.popup__question--password
+  p Wijzig wachtwoord
+  .error__container.error__container--pink.error__container--popup
+  .form__field.form__field--entry.form__field--profile
+    label.form__field--label(for='currentPassword') Huidig wachtwoord
+    input#currentPassword.form__field--input(type='password' name='currentPassword')
+  .form__field.form__field--entry.form__field--profile
+    label.form__field--label(for='newPassword') Nieuw wachtwoord
+    input#newPassword.form__field--input(type='password' name='newPassword')
+  .form__field.form__field--entry.form__field--profile
+    label.form__field--label(for='confirmPassword') Bevestig wachtwoord
+    input#confirmPassword.form__field--input(type='password' name='confirmPassword')
+  .popup__container--buttons
+    button.btn.btn__action--question.btn__action--question--secondary.btn__popup__password--edit opslaan
+    button.btn.btn__action.btn__action--question.btn__action--question--primary.btn__popup__password--cancel annuleer
+.popup.popup__question.popup__question--link
+  p Kopieer jouw unieke link en deel je vriendenboek.
+  p.FS__link link
+  .popup__container--buttons
+    button.btn.btn__action--question.btn__action--question--secondary.btn__popup__link--copy Kopieer
+    button.btn.btn__action.btn__action--question.btn__action--question--primary.btn__popup__link--cancel annuleer
+script(src='/javascripts/navigation.js')
+script(src='/javascripts/config.js')
+script(src='/javascripts/user-settings.js')
+script(src='/javascripts/logout.js')

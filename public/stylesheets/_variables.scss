@@ -1,0 +1,44 @@
+$white: white;
+$orange: #d8662e;
+$purple: #301a4b;
+$pink: #ffeaec;
+$darkPink: #F39A9D;
+$green: #3F6C51;
+$blue:#6DB1BF;
+$overlay: rgba(0, 0, 0, 0.6);
+$orangeBackgroundMobile: url('../images/background_mobile.png');
+$purpleBackgroundMobile: url('../images/background__mobile--purple.svg');
+
+$labelWeight: 600;
+$bold: 600;
+
+
+// links 
+$subLink: 0.7em;
+$redirectLinkSize: 0.9em;
+$redirectLinkWeight: 300;
+
+// line height
+$bodyLineHeight: 1.3em;
+
+// border radius
+$buttonRadius: 7px;
+$cardRadius: 0.5em;
+
+// cards
+$cardMargin: 0.6em 0;
+$cardPadding: 0 1em;
+$displayPadding: 0.5em 1em;
+
+// font awesome icons
+$iconPaddingRight: 0.5em;
+$iconPaddingLeft: 0.5em;
+$iconPadding: 0.4em;
+
+// settings title
+$h2Size:1.2em;
+$h2Weight:600;
+
+// error colors
+$purpleError: rgba(48, 26, 75, 0.6);
+$pinkError: rgba(255, 234, 236, 0.6);

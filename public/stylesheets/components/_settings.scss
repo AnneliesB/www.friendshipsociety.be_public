@@ -1,0 +1,90 @@
+.settings__titleContainer{
+    h2{
+        font-size: $h2Size;
+        font-weight: $h2Weight;
+    }
+}
+
+.settings__links{
+    margin-top: 2em;   
+}
+
+.settings__wrapper{
+    .settings__wrapper--navigation{
+        display: none;
+    }
+}
+
+@media(min-width: 500px){
+    .settings__titleContainer{
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+@media(min-width: 800px){
+    .main__settings-editList{
+        .question__container{
+            background-color: $purple;
+            color: $pink;
+        }
+    }
+
+    .settings__wrapper{
+        display: flex;
+        margin-top: 3em;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .settings__wrapper--navigation{
+            display: block;
+            width: 30%;
+
+            .settings__links {
+                margin-top: 0;
+            }
+        }
+
+        .settings__wrapper--content{
+            width: 65%;
+            margin-left: 5%;
+            padding: 1.5em;
+            background-color: $pink;
+            color: $purple;
+            border-radius: $cardRadius;
+
+            .form_entry{
+                margin:0 auto;
+
+                .form__field--input{
+                    color: $purple;
+                    border-bottom: 1px solid $purple;
+                }
+            }
+
+        }
+    }
+        .main__settings{
+        .settings__wrapper{
+            .settings__wrapper--content{
+                .questionaire__questionList{
+                    .question__container{
+                            .btn__action--question--primary {
+                                color: $purple;
+                                background-color: $pink;
+                                border: 2px solid $pink;
+                            }
+
+                            .btn__action--question--secondary {
+                                color: $pink;
+                                background-color: $purple;
+                                border: 2px solid $pink;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}

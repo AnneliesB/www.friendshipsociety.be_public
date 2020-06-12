@@ -1,0 +1,56 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Facebook OG Tags
+  meta(property='og:url' content='https://www.friendshipsociety.be/')
+  meta(property='og:type' content='website')
+  meta(property='og:title' content='Friendship Society | online vriendenboek')
+  meta(property='og:description' content='Friendship Society helpt jou om je vrienden beter te leren kennen. Stel jouw vriendenboek op en deel hem waar je maar wil!')
+  meta(property='og:image' content='https://www.friendshipsociety.be/images/graph.jpg')
+  // end OG Tags
+  // Twitter OG Tags
+  meta(name='twitter:title' content='designosource | jong digitaal talent')
+  meta(name='twitter:domain' content='https://www.friendshipsociety.be/')
+  meta(name='twitter:site' content='Friendship Society | online vriendenboek')
+  meta(name='twitter:creator' content='@FriendshipSociety')
+  meta(name='twitter:image' content='https://www.friendshipsociety.be/images/og-tcards.png')
+  meta(name='twitter:description' content='Friendship Society helpt jou om je vrienden beter te leren kennen. Stel jouw vriendenboek op en deel hem waar je maar wil!')
+  meta(name='twitter:url' content='https://www.friendshipsociety.be/')
+  // end Twitter OG Tags
+  link(href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://www.friendshipsociety.be/stylesheets/normalize.css')
+  link(rel='stylesheet' href='https://www.friendshipsociety.be/stylesheets/app.css')
+  link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous')
+  link(rel='apple-touch-icon' sizes='180x180' href='https://www.friendshipsociety.be/images/apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='https://www.friendshipsociety.be/images/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='https://www.friendshipsociety.be/images/favicon-16x16.png')
+  link(rel='manifest' href='https://www.friendshipsociety.be/images/site.webmanifest')
+  link(rel='mask-icon' href='https://www.friendshipsociety.be/images/safari-pinned-tab.svg' color='#5bbad5')
+  link(rel='shortcut icon' href='https://www.friendshipsociety.be/images/favicon.ico')
+  meta(name='msapplication-TileColor' content='#da532c')
+  meta(name='msapplication-config' content='https://www.friendshipsociety.be/images/browserconfig.xml')
+  meta(name='theme-color' content='#ffffff')
+  title Friendship Society
+body(class='main main__general')
+nav.navigation
+  .navigation__main.navigation__main--hamburgerless
+    .navigation__main--logo
+      a(href='./index')
+        img(src='./images/logo-orange.svg' alt='Friendship Society logo')
+.page.page__submission
+  .page__submission--intro
+    p Welcome to the society!
+    //- p Vul hieronder de vragenlijst van [voornaam] in.
+    p
+      | Vul hieronder de vragenlijst van 
+      span.submission__firstname
+      |  in.
+  .form.form__submission
+  button.btn.btn__fullWidth.questionaire__button--submit.questionaire__button--saveSubmission Opslaan
+script(src='/javascripts/autosize.js')
+script.
+  autosize(document.querySelectorAll('textarea'));
+script(src='/javascripts/config.js')
+script(src='/javascripts/query.js')
+script(src='/javascripts/invullen.js')

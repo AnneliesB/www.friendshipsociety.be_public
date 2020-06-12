@@ -1,0 +1,24 @@
+.logo__container--large{
+    width: 80%;
+    margin: 2.5em auto
+}
+
+.logo__container--large img{
+    width: 100%;
+}
+
+.complete__logo{
+    margin: 6em auto 4em auto;
+}
+
+@media(min-width: 375px) and (min-height: 667px){
+    .entry__logo{
+        margin-top: 4em;
+    }
+}
+
+@media(min-width: 850px){
+      .entry__logo, .complete__logo{
+        align-self: center;
+    }
+}

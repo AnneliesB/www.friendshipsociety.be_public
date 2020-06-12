@@ -1,0 +1,141 @@
+.form__field--entry{
+    padding-top: 2em;
+}
+
+.form__field--label {
+    display: block;
+    font-weight: $labelWeight;
+}
+
+.form__field--input {
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid $pink;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    color: $pink;
+}
+
+.form__field--submission{
+    margin-bottom: 1em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__field--submission--label{
+    padding: 0.8em 0.5em;
+}
+
+.form__field__submission--input{
+    width: 100%;
+    background-color: $purple;
+    resize: none;
+    border-radius: $cardRadius;
+    color: $pink;
+    padding: 1em;
+    border:none;
+}
+
+.main__settings-editList{
+    .question__container{
+        background-color: $pink;
+        color: $purple;
+    }
+}
+
+.form__field__submission--input::placeholder, .form__field__edit--input::placeholder{
+    color: $pink;
+    opacity: 0.7;
+}
+
+.form__field__edit--input{
+    width: 100%;
+    background-color: $orange;
+    resize: none;
+    border-radius: $cardRadius;
+    color: $pink;
+    border:none;
+}
+
+.form__field--profile{
+    .form__field--input{
+        font-weight: 300;
+        margin-top: 0.5em;
+    }
+
+    .form__field--label--password{
+        margin-bottom: 1em;
+
+        i{
+            font-size: 0.8em;
+            padding-left: 0.5em;
+        }
+    }
+}
+
+.submission__firstname{
+    font-weight: 500;
+}
+
+.form_entry{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.questionaire__questionList{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width: 375px) and (min-height: 667px){
+    .form__field--entry{
+    padding-top: 2em;
+    }
+}
+
+@media(min-width: 600px){
+    .question__container--optional{
+        display: flex;
+        justify-content: space-between;
+        .question__container--content{
+            i{
+                display: none;
+            }
+        }
+
+        .question__container--buttons{
+            display: flex;
+            min-width: 230px;
+            align-self: center;
+
+            .btn{
+                height: 30px;
+            }            
+        }
+    }
+}
+
+@media(min-width: 850px){
+    .entry, .complete{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        min-height: 100vh;
+    }
+
+    .form_entry, .FS__info{
+        max-width: 500px;
+        width: 80%;
+        margin: 4em auto;
+        align-self: center;
+    }
+
+    .entry__redirect{
+        grid-column-start: 2
+    }
+}

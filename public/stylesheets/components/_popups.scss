@@ -1,0 +1,85 @@
+.overlay {
+    background-color: $overlay;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    // top: 30%;
+    // left: 5%;
+    padding: 0.5em 1em;
+    width: 90%;
+    border-radius: $cardRadius;
+    margin-bottom: 3em;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup__question {
+    background-color: $orange;
+    color: $pink;
+}
+
+.popup__question--resetPassword{
+    background-color: $purple;
+
+    .popup__textarea--edit{
+        background-color: $purple;
+    }
+}
+
+.popup__question--edit {
+    display: none;
+}
+
+.popup__question--add {
+    display: none;
+}
+
+.popup__question--password {
+    display: none;
+}
+
+.popup__question--link {
+    display: none;
+}
+
+.popup__question--resetPassword {
+    display: none;
+}
+
+.popup p {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.popup__question--password {
+    // top: 18%;
+
+    p {
+        margin-bottom: 0em;
+    }
+}
+
+.popup__question--link {
+    .FS__link {
+        font-weight: 300;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+.popup__textarea--resetPass{
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    border-bottom: 1px solid $pink;
+    border-radius: 0;
+    padding: 0.5em 0;
+}

@@ -1,0 +1,124 @@
+.card {
+    color: $pink;
+    padding: $cardPadding;
+    border-radius: $cardRadius;
+    margin: $cardMargin;
+}
+
+.question__container {
+    background-color: $purple;
+}
+
+.question__container--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entries__teaser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entries__teaser a {
+    height: 100%;
+    align-self: top;
+}
+
+.entries__teaser1 {
+    background-color: $green;
+}
+
+.entries__teaser2 {
+    background-color: $blue;
+}
+
+.entries__teaser3 {
+    background-color: $purple;
+}
+
+.entries__teaser4 {
+    background-color: $darkPink;
+}
+
+.entries__teaser5 {
+    background-color: $orange;
+}
+
+.entries__teaser a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.teaser__content--name,
+.display__question {
+    font-weight: 600;
+}
+
+.teaser__content--description,
+.display__answer {
+    font-weight: 300;
+}
+
+.display__container {
+    background-color: $green;
+    color: $pink;
+    padding: $displayPadding;
+    border-radius: $cardRadius;
+    margin: $cardMargin;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+        padding: 0 0.25em;
+        font-weight: 500;
+    }
+
+    .display {
+        font-size: 0.9em;
+        padding: 0 0.5em;
+        border-bottom: 1px solid white;
+        margin: 1.5em 0;
+
+        .display__question {
+            margin: 0;
+        }
+
+        .display__answer {
+            margin: 0.4em 0 1em 0;
+        }
+    }
+
+    .display:last-child {
+        border-bottom: none;
+    }
+}
+
+@media(min-width: 600px) {
+    .teasers__container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .card {
+            width: 48%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+    }
+}
+
+@media(min-width: 850px) {
+    .teasers__container {
+        .card {
+            width: 31%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+    }
+}

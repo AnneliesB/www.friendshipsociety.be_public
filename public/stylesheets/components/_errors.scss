@@ -1,0 +1,26 @@
+.error__container{
+    border-radius: $buttonRadius;
+}
+
+.error__container--pink{
+    background-color: $pinkError;
+    color: $purple;
+    font-weight: 500;
+}
+
+.error__container--purple{
+    background-color: $purpleError;
+    color: $pink;
+    font-weight: 500;
+}
+
+.error__container p{
+    margin: 0;
+    padding: 0.4em 0.5em;
+}
+
+.error__container--popup{
+    font-weight: 500;
+    margin-top: 1em;
+    font-size: 0.9em;
+}

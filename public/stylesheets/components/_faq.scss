@@ -1,0 +1,18 @@
+.faq__item {
+    margin: $cardMargin;
+    border-bottom: 1px solid $pink;
+}
+
+.faq__item:last-child{
+    border-bottom: none;
+}
+
+.faq__item--question {
+    font-weight: 600;
+    margin: 0;
+}
+
+.faq__item--answer {
+    font-weight: 300;
+    margin: 0.4em 0 1em 0;
+}

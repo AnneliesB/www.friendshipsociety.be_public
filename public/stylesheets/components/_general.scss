@@ -1,0 +1,61 @@
+.background{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.entry{
+    background-image: $orangeBackgroundMobile;
+    color: $pink;
+}
+
+.complete{
+    background-image: $purpleBackgroundMobile;
+    color: $pink;
+}
+
+.main__general{
+    background-color: $pink;
+    color: $purple;
+}
+
+.main__settings{
+    background-color: $purple;
+    color:$pink;
+}
+
+.description, .page__submission--intro{
+    font-size: 0.85em;
+    font-weight: 300;
+    text-align: center;
+    line-height: $bodyLineHeight;
+}
+
+.page__submission--intro{
+    margin: 2em 0;
+}
+
+.page__submission--intro p{
+    margin: 0;
+}
+
+.complete__description{
+    width: 70%;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.page--detail{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empty__state{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.FS__link--toggle{
+    cursor: pointer;
+}

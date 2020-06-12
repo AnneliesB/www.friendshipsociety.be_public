@@ -1,0 +1,261 @@
+.btn {
+    border-radius: $buttonRadius;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.form__field--button {
+    background-color: $purple;
+    width: 90%;
+    color: $pink;
+    padding: 0.5em 0.6em;
+    display: block;
+    margin-top: 2em;
+}
+
+.form__subLink--passwordReset {
+    font-size: $subLink;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.link--redirect {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.entry__redirect {
+    font-size: $redirectLinkSize;
+    text-align: center;
+    font-weight: $redirectLinkWeight;
+    margin-top: 2em;
+}
+
+.questionaire__quickAction--button {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: $bold;
+    margin: 1.5em 0;
+}
+
+.questionaire__quickAction--button i {
+    padding-right: $iconPaddingRight;
+}
+
+// card buttons edit/delete
+.question__container--buttons {
+    // display: flex;
+    display: none;
+    justify-content: space-between;
+    padding: 0.7em 0;
+
+    .btn__action--question--primary {
+        color: $purple;
+        background-color: $pink;
+        border: 2px solid $pink;
+    }
+
+    .btn__action--question--secondary {
+        color: $pink;
+        background-color: $purple;
+        border: 2px solid $pink;
+    }
+}
+
+.main__settings{
+    .settings__wrapper{
+        .settings__wrapper--content{
+            .questionaire__questionList{
+                .question__container{
+                        .btn__action--question--primary {
+                            color: $pink;
+                            background-color: $purple;
+                            border: 2px solid $purple;
+                        }
+
+                        .btn__action--question--secondary {
+                            color: $purple;
+                            background-color: $pink;
+                            border: 2px solid $purple;
+                        }
+                }
+            }
+        }
+    }
+}
+
+.popup__container--buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 0;
+
+    .btn__action--question--primary {
+        color: $pink;
+        background-color: transparent;
+        border: 2px solid $pink;
+    }
+
+    .btn__action--question--secondary {
+        color: $orange;
+        background-color: $pink;
+        border: 2px solid $pink;
+    }
+}
+
+.question__container--content i {
+    padding: $iconPadding;
+}
+
+.btn__action--question {
+    width: 48%;
+    padding: 0.2em 0.5em;
+}
+
+.btn__action--question:nth-child(1) {
+    margin-right: 2%;
+}
+
+.btn__action--question:nth-child(2) {
+    margin-left: 2%;
+}
+
+// full width buttons
+.btn__fullWidth {
+    width: 100%;
+}
+
+// add button
+.btn__action--add {
+    border: 2px dashed $purple;
+    background-color: $pink;
+    text-align: left;
+    text-transform: none;
+    padding: 1em 0.2em;
+    color: $purple;
+    font-weight: 400;
+}
+
+.btn__action--add i {
+    padding-right: $iconPaddingRight;
+}
+
+// submit question list
+.questionaire__button--submit, .questionaire__button--update, .btn__profile--edit {
+    margin: 1em 0;
+    background-color: $orange;
+    color: $white;
+    padding: 0.8em;
+}
+
+.entries__teaser--button a{
+    text-decoration: none;
+    color: $pink;
+}
+
+.entries__teaser--button a i {
+    padding: $iconPadding;
+    color: $pink;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teasers__container + .pagination, .display__container + .pagination{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn__pagination {
+    color: $orange;
+    margin: 0.9em 0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btn__pagination--back {
+    text-align: left;
+
+    i {
+        padding-right: $iconPaddingRight;
+    }
+}
+
+.btn__pagination--next {
+    text-align: right;
+
+    i {
+        padding-left: $iconPaddingLeft;
+    }
+}
+
+.settings__links a {
+    text-decoration: none;
+    color: $pink;
+}
+
+// links settings navigation
+.settings__links--item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+    padding: 1em 1em 1em 1em;
+    border-bottom: 1px solid $pink;
+}
+
+.settings__links--item--last {
+    border-bottom: none;
+}
+
+.link__item--label {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+// redirect link button
+.btn__fullWidth--redirect {
+    background-color: $pink;
+    color: $purple;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    margin: 1em 0;
+    padding: 0.8em;
+}
+
+.popup__question--password{
+    .popup__container--buttons{
+        margin-top: 1em;
+    }
+}
+
+.popup__question--resetPassword{
+    .btn__action--question--secondary {
+        color: $purple;
+        background-color: $pink;
+        border: 2px solid $pink;
+    }
+}
+
+.questionaire__button--saveSubmission{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.btn__logout{
+    cursor:pointer;
+    margin: 0;
+}
